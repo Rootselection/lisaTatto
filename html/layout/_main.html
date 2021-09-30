@@ -351,15 +351,15 @@
             </li>
           </ul>
         </div>
-        <form class="contacts__form" action="#">
+        <form class="contacts__form" action="telegram.php" method="POST">
           <div class="contacts__form-title">
             Напиши мне, я отвечу!
             <img clas="contacts__form-img" src="images/icons/massege.svg" alt="massege form icon">
           </div>
           <div class="contacts__form-inner">
-            <input class="contacts__form-input" type="email" placeholder="Почтовый ящик" required>
-            <input class="contacts__form-input" type="tel" placeholder="Номер телефона" required>
-            <textarea class="contacts__form-input contacts__form-textarea" placeholder="Текст" required></textarea>
+            <input class="contacts__form-input" type="email" name="user_email" placeholder="Почтовый ящик" required>
+            <input class="contacts__form-input" type="tel" name="user_phone" id="phone_with_ddd" placeholder="(380) 00-000-00-00" required>
+            <textarea class="contacts__form-input contacts__form-textarea" name="user_text" placeholder="Текст" required></textarea>
             <button class="contacts__form-btn" type="submit">Отправить!</button>
           </div>
         </form>
